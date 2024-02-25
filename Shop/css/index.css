@@ -1,0 +1,115 @@
+/*General*/
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #dfdfdf;
+}
+
+body {
+    background-image:  linear-gradient(#ffffff, #8b8b8b), url('../images/black-sand.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+.inner-body {
+    width: 70%;
+    min-width: 1000px;
+    margin: 0 auto; margin-top: 4rem;
+    background: #0f0f0f;
+}
+
+
+
+
+
+/*Header*/
+
+.header-top-navigation {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+
+.navigation ul {
+    display: flex;
+}
+.navigation ul li {
+    list-style: none;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+.navigation ul li a {
+    text-decoration: none;
+}
+
+
+/*Footer*/
+
+
+/*Decorations*/
+
+.decoration-div-1 {
+    background-image: linear-gradient(rgba(51, 51, 51, 0.1), rgba(255, 255, 255, 0.1));
+    border-top: 2px solid #0f0f0f; border-left: 2px solid #0f0f0f;
+    border-bottom: 2px solid #585858; border-right: 2px solid #4d4d4d;
+    padding: 1rem;
+    
+}
+
+.decoration-div-2 {
+    background-image: linear-gradient(45deg,rgba(39, 39, 39, 0.1), rgba(134, 134, 134, 0.1));
+    border: 1px solid;
+    border-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    border-radius: 1px;
+    outline: 1px solid black;
+    background-color: #0f0f0f;
+    padding: .5rem;
+}
+
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0f0f0f;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader::after {
+    content: '';
+    width: 75px; height: 75px;
+    border: 15px solid #8b8b8b;
+    border-top-color: #dfdfdf;
+    border-radius: 50%;
+    animation: loading 0.75s, ease;
+    animation-iteration-count: infinite;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}

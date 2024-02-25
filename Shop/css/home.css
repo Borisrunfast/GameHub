@@ -1,0 +1,72 @@
+
+/*Header*/
+
+.best-selling {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Best Selling*/
+
+.best-selling-section {
+    padding: .5rem;
+}
+
+#display-best-selling {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+
+
+.best-selling-list-item {
+    max-height: 100px;
+    max-width: 180px;
+    min-width: 180px;
+    margin: .5rem;
+    list-style: none;
+    overflow-y: hidden;
+    object-fit: cover;
+}
+
+.best-selling-list-item-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+/*Sidebar flex 60-40*/
+.split-60-40 {
+    display: flex;
+    gap: 1rem;
+}
+.sidebar-home {
+    width: 100%;
+    flex: 1 1 40%;
+}
+
+/*New Games*/
+
+.display-games {
+    min-width: 100%;
+}
+
+.new-game-img {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.image-rating-overlap {
+    position: relative;
+}
+
+.new-game-rating {
+    position: absolute;
+    z-index: 1;
+}
+

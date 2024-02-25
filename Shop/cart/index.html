@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/index.css" rel="stylesheet"/>
+    <link href="../css/cart.css" rel="stylesheet"/>
+    <title>GameHub</title>
+</head>
+<body>
+    <div id="loader" class="loader"></div>
+    <div class="inner-body">
+        <header class="header">
+            <div class="header-top-navigation decoration-div-1">
+                <div class="logo-div">
+                    <h1>GameHub</h1>
+                </div>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../games/index.html">Games</a></li>
+                        <li><a href="#">Cart</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+           <section class="decoration-div-1">
+                <div class="search-div">
+                    <input type="text" id="search-movie" class="decoration-div-2" placeholder="doesn't work"/>
+                    <button id="search-movie-btn" class="decoration-div-2">Search</button>
+                </div>
+            </section>
+        </header>
+
+        <div id="cart-checkout-body" class="cart-checkout-body decoration-div-1">
+
+            <div id="checkout-body">
+
+            </div>
+            
+
+            <section class="checkout-body decoration-div-2">
+                <h3 id="total-price">Total Price:</h3>
+                <form>
+                    <h4>Details:</h4>
+                    <input class="type-box-decoration" type="text" placeholder="Name" required>
+                    <input class="type-box-decoration" type="email" placeholder="examlpe@example.com" required>
+
+
+                    <h4>Card Information:</h4>
+                    <input class="type-box-decoration" type="number" maxlength="16" placeholder="1234 1234 1234 1234">
+                    <div>
+                        <div class="MM-YY-decoration">
+                            <input class="type-box-decoration-2" type="number" maxlength="2" placeholder="MM">
+                            <input class="type-box-decoration-2" type="number" maxlength="2" placeholder="YY">
+                        </div>
+                        <input class="type-box-decoration" type="number" maxlength="3" placeholder="CVC">
+                    </div>
+                    
+
+                    <label><input type="checkbox">News letters to email</label>
+
+                    <button class="pay-btn decoration-div-2">Pay</button>
+                </form>
+            </section>
+        </div>
+        
+    </div>
+    
+    <script src="../src/cart.mjs" type="module"></script>
+</body>
+</html>

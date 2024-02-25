@@ -1,0 +1,49 @@
+/*search bar*/
+.search-div{
+    display: flex;
+}
+.search-div input {
+    width: 100%;
+    font-size: 1rem;
+}
+.search-div button {
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+/*display games*/
+.display-games {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+    justify-content: space-between;
+}
+
+.game-container {
+    width: 17%;
+    background-color: #333;
+}
+.game-container div {
+    
+}
+.game-container p{
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: absolute;
+    background-color: rgba(58, 57, 57, 0.7);
+}
+
+.game-container img {
+    width: 100%;
+}
+.game-container h3 {
+    padding: .5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    background-color: #444;
+}
+
